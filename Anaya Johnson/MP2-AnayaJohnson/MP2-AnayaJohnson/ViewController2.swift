@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController2: UIViewController {
 
+    @IBOutlet weak var answerDisplay: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,14 +17,17 @@ class ViewController2: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func response1(_ sender: Any) {
+        answerDisplay.text = "✅"
+        
     }
-    */
+    
+    @IBAction func respone2(_ sender: Any) {
+        answerDisplay.text = "❌"
+    }
+    
+    @IBAction func response3(_ sender: Any) {
+        answerDisplay.text = "❌"
+    }
 
 }

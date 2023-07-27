@@ -9,11 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var answerDisplay: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
 
+    @IBAction func response1(_ sender: Any) {
+        answerDisplay.text = "✅"
+        
+    }
+    
+    @IBAction func respone2(_ sender: Any) {
+        answerDisplay.text = "❌"
+    }
+    
+    @IBAction func response3(_ sender: Any) {
+        answerDisplay.text = "❌"
+    }
 }
 
